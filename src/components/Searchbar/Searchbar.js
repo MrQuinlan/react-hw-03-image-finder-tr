@@ -26,7 +26,7 @@ export default class Searchbar extends PureComponent {
       <header className={css.searchbar}>
         <form className={css.form} onSubmit={onFormSubmit}>
           <button type="submit" className={css.button}>
-            <span className={css.buttonLabel}>Search</span>
+            {this.props.children}
           </button>
 
           <input
